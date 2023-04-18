@@ -1,0 +1,37 @@
+.root {
+  padding: 72px 100px 58px 0;
+  display: flex;
+  justify-content: space-between;
+
+  .text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.41px;
+  }
+  .linksList {
+    display: flex;
+  }
+  .link {
+    cursor: pointer;
+    margin-right: 16px;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media (max-width: 1021px) {
+    display: block;
+    text-align: center;
+    .text {
+      padding-bottom: 40px;
+    }
+    .linksList {
+      justify-content: center;
+    }
+  }
+  @media (max-width: 420px) {
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,122 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 650px;
+  width: 50%;
+  transition: all 1s ease;
+  .mobile {
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+  }
+
+  .centerMobile {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 1s ease;
+
+    @media (max-width: 700px) {
+      width: 70%;
+      margin: 0 auto;
+    }
+    @media (max-width: 550px) {
+      display: none;
+    }
+
+    .birchB {
+      position: absolute;
+      top: 40px;
+      left: -20px;
+      width: 70%;
+      height: 60%;
+      z-index: 3;
+    }
+    .greenCircleB {
+      position: absolute;
+      top: 40px;
+      left: 50px;
+      width: 90%;
+      height: 90%;
+      z-index: 2;
+    }
+    .pinCircleB {
+      position: absolute;
+      top: -30px;
+      left: 110px;
+      width: 80%;
+      height: 60%;
+      z-index: 1;
+    }
+  }
+
+  .birchSM {
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    width: 42px;
+    height: 42px;
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+  .greenCircleSM {
+    position: absolute;
+    top: 360px;
+    left: 52px;
+    width: 42px;
+    height: 42px;
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+  .pinCircleSM {
+    position: absolute;
+    bottom: -20px;
+    right: 100px;
+    width: 48px;
+    height: 48px;
+    @media (max-width: 550px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1270px) {
+    width: 50%;
+    .centerMobile {
+      width: 60%;
+      margin: 0 auto;
+      top: 30px;
+      left: -10px;
+      .greenCircleB {
+        width: 100%;
+        height: 90%;
+      }
+    }
+  }
+  @media (max-width: 1100px) {
+    width: 43%;
+  }
+  @media (max-width: 1020px) {
+    width: 50%;
+    margin: 0 auto;
+    height: 500px;
+  }
+  @media (max-width: 954px) {
+    .centerMobile {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 700px) {
+    width: 85%;
+    height: 400px;
+    margin: 0 auto;
+  }
+}

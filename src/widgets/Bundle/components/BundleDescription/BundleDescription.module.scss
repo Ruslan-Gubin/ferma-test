@@ -1,0 +1,72 @@
+.root {
+  padding-top: 72px;
+  margin-right: 10px;
+  width: 45%;
+  @media (max-width: 1270px) {
+    width: 55%;
+  }
+  @media (max-width: 1020px) {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 45px;
+    width: 95%;
+    margin: 0;
+    min-height: 180px;
+    white-space: pre-line;
+    letter-spacing: 3px;
+    transition: all 1s ease;
+    @media (max-width: 940px) {
+      width: 100%;
+    }
+    @media (max-width: 540px) {
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .textList {
+    padding: 52px 0 42px 0;
+    padding-left: 10px;
+    width: 80%;
+    .text {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: -0.41px;
+      position: relative;
+      transition: all 1s ease;
+      @media (max-width: 540px) {
+        font-size: 18px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: -10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: black;
+      }
+    }
+  }
+  img {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .span {
+    padding-top: 17px;
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.41px;
+    color: rgba(31, 41, 74, 0.5);
+  }
+}

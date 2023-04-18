@@ -1,0 +1,11 @@
+.root {
+  padding-top: 76px;
+
+  img {
+    width: 69px;
+    height: 65px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
